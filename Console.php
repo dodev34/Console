@@ -84,7 +84,7 @@ abstract class Console
     $message = self::parseCallBackColor($message);
     $output  = self::formatOutPut($message);
     
-    return sprintf("$output\n");
+    return sprintf("%s\n", $output);
   }
   
    /**
