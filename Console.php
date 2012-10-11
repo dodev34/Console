@@ -177,6 +177,6 @@ abstract class Console
    * @return float
    */
   static public function getMemoryUsage() {
-      return (float) number_format((memory_get_usage()/1048576), $decimal, '.', '');
+      return (float) number_format((memory_get_usage()/1048576), self::$memoryUsageDecimal, '.', '');
   }
 }
